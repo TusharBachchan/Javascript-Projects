@@ -1,0 +1,47 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+.clock {
+  height: 100vh;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background: url("./images/pexels-dominika-roseclay-13950527.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  /* text-align: center; */
+}
+.hours,
+.minutes,
+.seconds {
+  height: 100px;
+  width: 100px;
+  /* border: 2px solid black; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: xx-large;
+  text-transform: capitalize;
+}
+.ampm {
+  font-size: xx-large;
+}
+
+/* .hourValue,
+.hourTag,
+.minuteValue,
+.minuteTag,
+.secondsValue,
+.secondsTag {
+  position: absolute;
+} */

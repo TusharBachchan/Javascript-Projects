@@ -1,0 +1,28 @@
+/* html,
+body {
+  min-height: calc(100vh - 20px);
+} */
+
+.text_box {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+#container {
+  width: 100%;
+  background-color: #59546c;
+  display: flex;
+  margin: 0 auto;
+}
+
+.center_buttons {
+  margin: auto;
+  display: block;
+}
+h1 {
+  color: white;
+  margin-top: 10px;
+}

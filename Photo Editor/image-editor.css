@@ -1,0 +1,54 @@
+#imageEditor {
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #4b4b4b;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  background-color: #ababab;
+  /* max-width: 950px; */
+  width: clamp(340px, 50%, 1600px);
+  margin-bottom: 15px;
+}
+
+#editorContainer {
+  display: block;
+  overflow: auto;
+  width: 46vw;
+  height: calc(70vh - 2px);
+}
+
+#editor {
+  display: block;
+  margin: auto;
+}
+
+#toolbar {
+  display: inline-block;
+  /* margin-right: 50px; */
+  /* margin-bottom: 15px; */
+  /* margin-top: 15px; */
+  /* margin: 0px; */
+  /* transform: translateX(2227px); */
+  width: clamp(310px, 30%, 1200px);
+}
+
+#resizer {
+  border: 2px dashed #000;
+}
+
+#toolbar button {
+  padding: 10px 20px 10px 20px;
+  /* justify-content: space-between; */
+  margin: 6px;
+}
+
+#resize {
+  position: relative;
+  bottom: 10px;
+}
+
+#greyscale {
+  position: relative;
+  bottom: 10px;
+}
