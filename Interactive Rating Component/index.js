@@ -10,15 +10,6 @@ for(let ratingButton of ratingButtons){
         buttonPressed.style.backgroundColor = "white";
         ratingSelected = buttonPressed.getAttribute("valueEL");
         console.log(ratingSelected)
-        // if(!alreadyClicked){
-        //     buttonPressed.style.backgroundColor = "white";
-        //     alreadyClicked = true;
-        // }
-        // else{
-        //     prevelement.style.color = "";
-        //     // buttonPressed.style.backgroundColor = "white";
-        //     // alreadyClicked = true;
-        // }
     });
 }
 let submitButton = document.querySelector(".submit");
