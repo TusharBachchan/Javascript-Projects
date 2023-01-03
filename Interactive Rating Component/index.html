@@ -11,10 +11,10 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+    <script src="index.js" defer></script>
     <title>Frontend Mentor | Interactive rating component</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Rating state start -->
@@ -40,20 +40,37 @@
       >. Coded by <a href="#">Tushar Bachchan</a>.
     </div> -->
     <div class="container">
-      <div class="star-icon"></div>
-      <div class="rating-text">
-        <h2>How did we do?</h2>
-        <p>Please let us know how we did with your support request. All
-          feedback is appreciated to help us improve our offering!</p>
+      <div class="initial-card">
+        <div class="star-icon">
+          
+        </div>
+        <div class="rating-text">
+          <h2 class="heading">How did we do?</h2>
+          <p>
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+        </div>
+        <div class="rating-container">
+          <div class="rating" id="btn1" valueEL=1>1</div>
+          <div class="rating" id="btn2" valueEL=2>2</div>
+          <div class="rating" id="btn3" valueEL=3>3</div>
+          <div class="rating" id="btn4" valueEL=4>4</div>
+          <div class="rating" id="btn5" valueEL=5>5</div>
+        </div>
+        <button class="submit" type="submit">Submit</button>
       </div>
-      <div class="rating-container">
-        <div class="rating">1</div>
-        <div class="rating">2</div>
-        <div class="rating">3</div>
-        <div class="rating">4</div>
-        <div class="rating">5</div>
+      <div class="thank-card not-visible">
+        <div class="thank-img"></div>
+        <span class="selected-rating-text">You selected <span class="selected-rating">4</span> out of 5</span>
+        <div class="rating-text">
+          <h2 class="heading thank-heading">Thank you!</h2>
+          <p class="thank-p">
+            We appreciate you taking the time to give a rating. If
+    you ever need more support, don’t hesitate to get in touch!
+          </p>
+        </div>
       </div>
-      <button class="submit">Submit</button>
     </div>
   </body>
 </html>

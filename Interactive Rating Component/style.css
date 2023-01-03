@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(216, 12%, 8%);
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+}
+
+.container{
+    width: 300px;
+    /* border: 2px solid red; */
+    /* <img src="./images/icon-star.svg" alt="star-icon"> */
+    padding: 20px;
+    border-radius: 20px;
+    background-color: hsl(213, 19%, 18%);
+}
+.star-icon{
+    background: url("./images/icon-star.svg") no-repeat center;
+    background-color: rgb(43, 53, 65);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    padding: 15px;
+}
+.heading{
+    color: hsl(0, 0%, 100%);
+}
+p{
+    color: hsl(216, 12%, 54%);
+}
+.rating-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.rating-container div{
+    background-color: rgb(43, 53, 65);
+    /* background-color: white; */
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    color:hsl(217, 12%, 63%);
+    text-align: center;
+    padding: 15px;
+    margin: 10px 0;
+    cursor: pointer;
+    /* box-sizing: border-box; */
+}
+.rating-container div:hover{
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+.submit{
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    box-shadow: 1px 1px rgba(0, 0, 0, .3);
+}
+.submit:hover{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    text-transform: uppercase;
+    box-shadow: 1px 1px rgba(0, 0, 0, .3);
+}
+
+.not-visible{
+    display: none;
+}
+.thank-heading{
+    text-align: center;
+}
+.thank-p{
+    text-align: center;
+}
+.thank-img{
+    height: 100px;
+    width: 100%;
+    background: url("./images/illustration-thank-you.svg") no-repeat center;
+    margin: 10px auto;
+}
+.selected-rating-text{
+    color:hsl(25, 97%, 53%);
+    /* border:2px solid white; */
+    border-radius: 20px;
+    padding: 8px;
+    background-color: rgb(43, 53, 65);
+    display: table;
+    margin: 0 auto;
+    margin-top: 30px;;
+}
