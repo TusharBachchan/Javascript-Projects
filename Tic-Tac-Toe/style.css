@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body{
+  background: #8A9B68;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+
+}
+.container{
+  height : 27rem;
+  /* min-height: 18rem; */
+  width : 27rem;
+  /* min-width : 18rem; */
+  background : #B6C197;
+  text-align: center;
+}
+.tic-tac-toe-container{
+  display : grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 9rem);
+  grid-gap : .3rem;
+  background: white;
+  /* grid-auto-rows :  max-content; */
+  /* align-items: stretch; */
+}
+.box{
+  background : #D5DDBC;
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  color: white;
+  /* border : 1px solid #937B63; */
+  /* margin : .1rem; */
+  /* height : 33.33 */
+  
+}
+
+.players{
+    background: #8A9B68;
+  color : white;
+font-size: 2rem;
+  /* height:  */
+}
