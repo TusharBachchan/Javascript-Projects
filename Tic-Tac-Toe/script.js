@@ -1,6 +1,6 @@
-const board = [[-1, -1, -1], 
-               [-1, -1, -1], 
-               [-1, -1, -1]];
+const board = [[0, 0, 0], 
+               [0, 0, 0], 
+               [0, 0, 0]];
 const hm = new Map();
 let startVal = 1;
 const n = board.length;
@@ -17,13 +17,14 @@ function check(player, id){
     // console.log(hm.get(+id)[0])
     let i = +hm.get(+id)[0]
     let j = +hm.get(+id)[1]
+    board[i][j] = player;
     console.log(i, "", j)
     let east = true;
     for(let jj = 0; jj < n; jj++){
         if(board[i][jj] !== player) east = false;
     }
     let southEast = false;
-    if( i + j === n - 1){
+    if( i === j){
         southEast = true;
         for(let ii = 0; ii < n; ii++){
             let jj = ii;
@@ -32,9 +33,26 @@ function check(player, id){
     }
     let northEast = false;
     if(i + j === n - 1){
-
+      northEast = true;
+      for(let ii = 0; ii < n; ii++){
+        let jj = n - 1 - ii;
+        if(board[ii][jj] !== player) northEast = false;
+      }
     }
-   
+    let north = true;
+    for(let ii = 0; ii < n; ii++){
+      if(board[ii][j] !== player) north = false;
+    }
+   console.log(
+    `
+    Player : ${player}
+    North : ${north}
+    East : ${east}
+    NorthEast : ${northEast}
+    SouthEast : ${southEast}
+    `
+    )
+    return north || northEast || east || southEast;
 }
 for(let i = 1; i <= 9; i++){
   let ele = document.getElementById('' + i)
@@ -42,9 +60,12 @@ for(let i = 1; i <= 9; i++){
   ele.addEventListener("click", function(e){
     let currentPlayer = players[initialState];
     // console.log(currentPlayer)
-    e.target.innerText = currentPlayer;
+    e.target.textContent = currentPlayer;
+    console.log(board)
     initialState = 1 - initialState;
     let hasWon = check(currentPlayer, e.target.id)
-    hasWon ? alert(`${currentPlayer} wins!`) : null;
+    setTimeout(() => {
+      hasWon ? alert(`${currentPlayer} wins!`) : null;
+    }, 200)
   });
 }
