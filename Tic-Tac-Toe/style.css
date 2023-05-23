@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 body{
-  background: #8A9B68;
+  /* background: #8A9B68; */
+  background: rgba(42, 60, 219, 1.0);
+  background: linear-gradient(225deg, rgba(42, 60, 219, 1.0), rgba(90, 170, 115, 1.0));
   margin: 0;
   height: 100vh;
   display: flex;
@@ -11,10 +13,9 @@ body{
 }
 .container{
   height : 27rem;
-  /* min-height: 18rem; */
+  min-height: 18rem;
   width : 27rem;
-  /* min-width : 18rem; */
-  background : #B6C197;
+  min-width : 18rem;
   text-align: center;
 }
 .tic-tac-toe-container{
@@ -22,12 +23,17 @@ body{
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 9rem);
   grid-gap : .3rem;
-  background: white;
+  /* background: white; */
   /* grid-auto-rows :  max-content; */
   /* align-items: stretch; */
 }
 .box{
-  background : #D5DDBC;
+/*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=8ca94c&c2=4eb46f&gt=r&gd=dtr
+*/
+/* background: #99EEF2; */
+/* background: radial-gradient(at right top, rgba(140, 169, 76, 1.0), rgba(78, 180, 111, 1.0)); */
   display : flex;
   justify-content: center;
   align-items: center;
@@ -40,8 +46,22 @@ body{
 }
 
 .players{
-    background: #8A9B68;
+    /* background: #48E6EE; */
+    /* background: #4472CA; */
   color : white;
 font-size: 2rem;
+margin-bottom: .5rem;
   /* height:  */
+}
+.btn{
+  font-size: 20px;
+  padding : 1rem 2rem;
+  border-radius: 3rem;
+}
+.buttons{
+  margin-top: 1rem;
+}
+
+.box{
+  border : 2px solid #A8EEB5
 }
