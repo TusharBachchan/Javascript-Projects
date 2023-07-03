@@ -1,4 +1,5 @@
-// const API_KEY = <API KEY>
+// const API_KEY = <API KEY> // Generate your API Key and set here
+
 const FETCH_URL = "https://api.openweathermap.org/data/2.5/weather?q="
 
 async function getData(cityName){
