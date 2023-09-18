@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  font-family: "Nunito", sans-serif;
+  color: white;
+}
+.main-container {
+  width: 30%;
+  height: 70vh;
+  border: 2px solid green;
+  padding: 1rem;
+  background-color: transparent;
+}
+.heading {
+  text-align: center;
+  color: white;
+  font-size: larger;
+}
+.input-container {
+  display: flex;
+  gap: 0.2rem;
+  /* border: 2px solid red; */
+  margin: 1rem 0;
+  color: white;
+  padding: 0.3rem;
+  background-color: #222122;
+}
+.pw-gen-container {
+  background-color: #222122;
+  padding: 0.3rem;
+}
+.generated-pw {
+  width: 90%;
+  /* border:2px solid yellow; */
+}
+.ch-len {
+  width: 100%;
+  /* border: 2px solid yellow; */
+  display: flex;
+  margin-bottom: 0.1rem;
+}
+#ch-len-title {
+  width: 90%;
+  /* border: 2px solid purple; */
+  color: white;
+  padding: 0.3rem;
+}
+#ch-len-val {
+  width: 10%;
+  /* border: 2px solid greenyellow; */
+  text-align: center;
+  color: #9ae19d;
+  padding: 0.3rem;
+  font-size: larger;
+}
+.copy span {
+  color: #9ae19d;
+  margin-left: 0.1rem;
+}
+/* input[type="checkbox"]{
+  display: block;
+} */
+
+.filter-checks{
+  margin-top: .5rem;
+}
+/*********** Baseline, reset styles ***********/
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 97%;
+}
+
+/* Removes default focus */
+input[type="range"]:focus {
+  outline: none;
+}
+
+/******** Chrome, Safari, Opera and Edge Chromium styles ********/
+/* slider track */
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: black;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+/* slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -4px; /* Centers thumb on the track */
+  background-color: white;
+  border-radius: 0.5rem;
+  height: 1rem;
+  width: 1rem;
+}
+
+/*********** Firefox styles ***********/
+/* slider track */
+input[type="range"]::-moz-range-track {
+  background-color: black;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+/* slider thumb */
+input[type="range"]::-moz-range-thumb {
+  background-color: black;
+  border: none; /*Removes extra border that FF applies*/
+  border-radius: 0.5rem;
+  height: 1rem;
+  width: 1rem;
+}
+
+input[type="range"]:focus::-moz-range-thumb {
+  outline: 3px solid #808080;
+  outline-offset: 0.125rem;
+}

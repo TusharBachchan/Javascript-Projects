@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="heading">
+        Password Generator
+      </div>
+      <div class="input-container">
+        <div class="generated-pw">
+          <span id="newpw" class="gen">P4$5W0rD!</span>
+        </div>
+        <div class="copy">
+          <span class="material-icons"> content_copy </span>
+        </div>
+      </div>
+      <div class="pw-gen-container">
+        <div class="ch-len">
+          <div id="ch-len-title">Character Length</div>
+          <div id="ch-len-val"></div>
+        </div>
+        <input type="range" id="slider" min="0" max="15" value="8"/>
+        <div class="filter-checks">
+          <input type="checkbox" id="#includeUp">
+          <label for="includeUP">Include Uppercase Letters</label><br>
+          <input type="checkbox" id="#includeLo">
+          <label for="includeLo">Include Lowercase Letters</label><br>
+          <input type="checkbox" id="#includeNum">
+          <label for="includeNum">Include Numbers</label><br>
+          <input type="checkbox" id="#includeSym">
+          <label for="includeSym">Include Symbols</label><br>
+        </div>
+        <div class="strength-indicator">
+          
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
