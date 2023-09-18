@@ -35,9 +35,10 @@ body {
 }
 .pw-gen-container {
   background-color: #222122;
-  padding: 0.3rem;
+  padding: 1rem;
 }
 .generated-pw {
+  position: relative;
   width: 90%;
   /* border:2px solid yellow; */
 }
@@ -68,9 +69,31 @@ body {
 /* input[type="checkbox"]{
   display: block;
 } */
-
-.filter-checks{
-  margin-top: .5rem;
+.gen {
+  color: rgb(124, 122, 122);
+  position: absolute;
+  top: 0.2rem;
+  left: 1.1rem;
+  font-size: larger;
+}
+.new-gen {
+  color: white;
+}
+.filter-checks {
+  margin-top: 0.5rem;
+}
+.generate {
+  margin-top: 1rem;
+}
+.generate button {
+  padding: 0.5rem;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+  /* outline: none; */
+  background-color: #9ae19d;
+  margin: 0;
+  border: none;
 }
 /*********** Baseline, reset styles ***********/
 input[type="range"] {
